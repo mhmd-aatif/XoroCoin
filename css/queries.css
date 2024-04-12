@@ -1,0 +1,278 @@
+/*************************/
+/* BELOW 1296px */
+/*************************/
+@media (max-width: 81em) {
+  .hero-content-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+
+  .team-member-cards {
+    grid-template-columns: repeat(3, 25%);
+  }
+}
+
+/*************************/
+/* BELOW 1200px */
+/*************************/
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 4.4rem;
+  }
+
+  .features {
+    gap: 0 3.2rem;
+  }
+
+  .feature {
+    padding: 2.4rem;
+  }
+}
+
+/*************************/
+/* BELOW 1008px */
+/*************************/
+@media (max-width: 63em) {
+  html {
+    font-size: 50%;
+  }
+
+  .ellipse {
+    display: none;
+  }
+
+  .hero-content-box {
+    position: relative;
+    transform: translate(-50%, 0);
+  }
+
+  .hero-text {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1;
+  }
+
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    z-index: 1;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .big-heading {
+    font-size: 18rem;
+  }
+}
+
+/*************************/
+/* BELOW 880px */
+/*************************/
+@media (max-width: 55em) {
+  /* .ellipse {
+    display: none;
+  }
+
+  .hero-content-box {
+    position: relative;
+    transform: translate(-50%, 0);
+  } */
+
+  .hero-text {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .big-heading {
+    font-size: 16rem;
+  }
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+  }
+
+  .feature:nth-child(3) {
+    grid-column: 1 / -1;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .steps {
+    gap: 2.4rem;
+  }
+
+  .team-member-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem 3.2rem;
+  }
+}
+
+/*************************/
+/* BELOW 752px */
+/*************************/
+@media (max-width: 47em) {
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .big-heading {
+    font-size: 14rem;
+  }
+
+  .hero-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature:nth-child(3) {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .step-text-box {
+    position: relative;
+    transform: translateY(-3.2rem);
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box::before {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  .step-img {
+    width: 35%;
+  }
+
+  .step-number {
+    font-size: 8rem;
+  }
+
+  .social-cards {
+    gap: 2.4rem 3.2rem;
+  }
+
+  .social-platform {
+    font-size: 2.4rem;
+  }
+}
+
+/*************************/
+/* BELOW 608px */
+/*************************/
+@media (max-width: 38em) {
+  .team-member-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 6.4rem;
+  }
+
+  .socials-col {
+    display: none;
+  }
+}
+
+/*************************/
+/* BELOW 496px */
+/*************************/
+@media (max-width: 31em) {
+  .sub-heading,
+  .heading-secondary {
+    text-align: center;
+  }
+
+  .learn-more {
+    margin-left: 2.4rem;
+  }
+
+  .learn-more,
+  .buy-now {
+    width: 80%;
+    padding: 1.8rem 0 !important;
+  }
+
+  .feature,
+  .feature:nth-child(3) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .step-img {
+    width: 70%;
+    margin-bottom: 4.8rem;
+  }
+
+  .social-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-member-cards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+    margin: 0 auto;
+  }
+}
